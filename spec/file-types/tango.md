@@ -15,12 +15,14 @@ The `rules` header indicates a list of definitions for rules obeyed by an automa
 
 `expr` is any valid Tango expression which evaluates to a range.
 `ifState` is the name of one of the states defined in the project's .tangoh file.
-`in` is a ternary keyword operator which is used to determine whether the current rule should be applied.
+`in` is a ternary keyword operator that determines whether the current rule should be applied.
 `neighborhood` is any valid Tango expression that evaluates to a neighborhood.*
 `>>` is a binary operator that applies the current rule when appropriate (as determined by `in`).
 `newState` is the name of one of the states defined in the project's .tangoh file.
 
+\* In many cases this will just be the name of a neighborhood defined in the project's .tangoh file.
 
+The process of checking and applying a rule is simple. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2MTg4MzkwNSwzNDI4MDU5MF19
+eyJoaXN0b3J5IjpbLTEzMzMyODYxNzYsMzQyODA1OTBdfQ==
 -->
