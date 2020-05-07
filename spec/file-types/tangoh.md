@@ -12,7 +12,7 @@ Any line in a .tangoh file which is not indented will be considered the header o
 ### states
 The `states` keyword is the most important part of a .tangoh file, and it represents the most important part of a cellular automaton. Without having two or more states to switch between, an automaton would just sit there and not do anything.
 
-The syntax for the list of states is simple --- it is the `states` keyword followed by an indented list of state names. This is the list that Tango will check against to determine that all state files are present, so state names must be file-safe. To that end, each state name must begin with a capital letter, and may contain only alphanumeric characters, hyphens, and underscores.
+The syntax for the list of states is simple; it is the `states` keyword followed by an indented list of state names. This is the list that Tango will check against to determine that all state files are present, so state names must be file-safe. To that end, each state name must begin with a capital letter, and may contain only alphanumeric characters, hyphens, and underscores.
 
 In the event that any part of Tango needs a state as input, the first item in this list will be considered the default.
 ### world
@@ -36,7 +36,7 @@ World attributes must be defined in the following order:
 - `type`, which indicates many general properties of the world
 - `cell-init`, which indicates how cells should be initialized
 
-The order of world attributes is important because any world attribute's values may influence the set of available values for world attributes below it. For example, a `world` with  `type flat` cannot have `cell-init random` --- this would cause the state machine to hang before even running a single generation as it calculates an infinite number of random states.
+The order of world attributes is important because any world attribute's values may influence the set of available values for world attributes below it. For example, a `world` with  `type flat` cannot have `cell-init random`. This would cause the state machine to hang before even running a single generation as it calculates an infinite number of random states.
 
 A .tangoh file with no `world` list will be treated as one with the following default settings:
 ```
