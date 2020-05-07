@@ -31,7 +31,9 @@ The process of checking and applying rules is simple. Tango checks the condition
 The `visual` list in a .tango file describes how a state should be visually represented. This is entirely optional, and is only serves to tell an application how to display the grid. It is a list of visual attributes and their values. Tango's state machine does not use these values to calculate anything. Instead, it stores them separately from the state machine and provides them to any app that requests them.
 
 Visual attributes are set by being added to a new line under the `visual` keyword. They are then followed by a space and their value. Visual attributes can be set in any order and include the following:
-
+attribute name | allowed values | function
+- | - | -
+`char` | any single character |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwODIxNTg1NSwzNDI4MDU5MF19
+eyJoaXN0b3J5IjpbLTI0MjIyMjc3NiwzNDI4MDU5MF19
 -->
