@@ -9,6 +9,7 @@ A .tango file contains three elements: a simple declaration, a list of ways a st
 
 The `state` and `rules` are required, but `visual` may be omitted.
 ### declaration
+The declaration of a .tango file can be thought of as the last checkpoint Tango encounters before defining a state. After checking the file name against the `states` list in the .tangoh
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQyODA1OTBdfQ==
+eyJoaXN0b3J5IjpbNDM3NzcyMTg5LDM0MjgwNTkwXX0=
 -->
