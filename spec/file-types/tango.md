@@ -17,7 +17,7 @@ The `rules` header indicates a list of definitions for rules obeyed by an automa
 `state` is the name of one of the states defined in the project's .tangoh file.
 `in` is a ternary keyword operator which is used to determine whether the current rule should be applied.
 `neighborhood` is any valid Tango expression that evaluates to a neighborhood.*
-`>>`
+`>>` is a binary operator that applies the current rule when appropriate (as determined by `in`)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1NzY2MTI0NiwzNDI4MDU5MF19
+eyJoaXN0b3J5IjpbLTEyMzM2Njg4NzAsMzQyODA1OTBdfQ==
 -->
