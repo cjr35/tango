@@ -15,7 +15,7 @@ The `rules` header indicates a list of definitions for rules obeyed by an automa
 
 `expr` is any valid Tango expression which evaluates to a number or a range.
 `state` is the name of one of the states defined in the project's .tangoh file.
-`in` is a keyword operator
+`in` is a ternary keyword operator. It takes a number or range followed by a state as its left operands, and a neighborhood defined as its right operand.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTE2MTM5NzgsMzQyODA1OTBdfQ==
+eyJoaXN0b3J5IjpbNTcwOTg4NDYyLDM0MjgwNTkwXX0=
 -->
