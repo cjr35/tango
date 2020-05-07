@@ -1,5 +1,8 @@
 # .tango
-A body file in a project. This file represents and must be named after one of the states declared in the project's .tangoh file. There must be exactly one .tango file for e
+A body file in a project. This file represents and must be named after one of the states declared in the project's .tangoh file. There must be exactly one .tango file for each of these states.
+
+## Contents
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyODE0NzU0Nl19
+eyJoaXN0b3J5IjpbLTEzNDI3MTEzMTBdfQ==
 -->
