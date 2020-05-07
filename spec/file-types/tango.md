@@ -26,7 +26,7 @@ The `in neighborhood` part of a rule definition is optional. In the absence of a
 
 The list of rules may be ended by an `otherwise` statement. This statement consists of the keyword `otherwise` followed by a space and a state name or the keyword `stay`. The `otherwise` statement is optional, and in its absence Tango will behave as though the list ended with `otherwise stay`.
 
-The process of checking and applying rules is simple. Tango checks the condition to the left of `>>`. If that condition is met, Tango applies the current rule and exits, not bothering to check any rules listed below. If the condition is not met, Tango looks at the next rule and repeats the process. This continues until Tango finds an applica
+The process of checking and applying rules is simple. Tango checks the condition to the left of `>>`. If that condition is met, Tango applies the current rule and exits, not bothering to check any rules listed below. If the condition is not met, Tango looks at the next rule and repeats the process. If Tango finds no applicable rules, it 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzOTU5NzM3MCwzNDI4MDU5MF19
+eyJoaXN0b3J5IjpbMTEwODQ0NDg3NiwzNDI4MDU5MF19
 -->
