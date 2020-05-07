@@ -34,7 +34,9 @@ Visual attributes are set by being added to a new line under the `visual` keywor
 attribute name | allowed values | target
 - | - | -
 `char` | any single character | text-based Tango visualizations
-`color` | any hex code or 
+`color` | any hex code or a color keyword | grid-based Tango visualizations
+
+In the absence of a 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2MTQyMjQwLDM0MjgwNTkwXX0=
+eyJoaXN0b3J5IjpbMTYyNzc2NzA5MCwzNDI4MDU5MF19
 -->
