@@ -73,3 +73,9 @@ produces
 
 ###
 In the event that any part of Tango needs a neighborhood as input, the neighborhood named `default` will be used. If no neighborhood is named `default`, the first item in the list will be used.
+
+A .tangoh file with no `neighborhood` list will be treated as one with the following default settings:
+```
+neighborhoods
+	moore 1 as default
+```
