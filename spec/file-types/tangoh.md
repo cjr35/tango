@@ -36,7 +36,7 @@ World attributes must be defined in the following order:
 - `type`, which indicates many general properties of the world
 - `cell-init`, which indicates how cells should be initialized
 
-The order of world attributes is important because any world attribute's values may influence the set of available values for world attributes below it. For example, a `world` with  `type flat` cannot have `cell-init random`. This would cause the state machine to hang before even running a single generation as it calculates an infinite number of random states.
+The order of world attributes is critical because any world attribute's values may influence the set of available values for world attributes below it. For example, a `world` with  `type flat` cannot have `cell-init random`. This would cause the state machine to hang before even running a single generation as it calculates an infinite number of random states.
 
 A .tangoh file with no `world` list will be treated as one with the following default settings:
 ```
@@ -80,5 +80,5 @@ neighborhoods
 	moore 1 as default
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzc4NjcwODg2XX0=
+eyJoaXN0b3J5IjpbODkzNTA2MTAzLDc3ODY3MDg4Nl19
 -->
