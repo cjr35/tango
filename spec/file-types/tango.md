@@ -11,7 +11,7 @@ The `state` and `rules` are required, but `visual` may be omitted. These three k
 ### declaration
 The declaration of a .tango file can be thought of as the last checkpoint Tango encounters before defining a state. After checking the file name against the `states` list in the .tangoh file, Tango checks for the word `state` followed by a space and the file's name again. Finding `state` identifies the file as one which describes a state, and finding the file's name verifies that the following code defines that state.
 ### rules
-The `rules` header indicates a list that defines the rules obeyed by an automaton. An automaton obeys different rules depending on the state it is in, .
+The `rules` header indicates a list of definitions for rules obeyed by an automaton. An automaton obeys different rules depending on the state it is in, so each .tango file has its own `rules`. The syntax of a rule is ``
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTM2NTk1MzQyLDM0MjgwNTkwXX0=
+eyJoaXN0b3J5IjpbLTQxODY1MzAwMSwzNDI4MDU5MF19
 -->
