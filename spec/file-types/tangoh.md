@@ -18,7 +18,7 @@ In the event that any part of Tango needs a state as input, the first item in th
 ### world
 The `world` keyword heads an indented list of attributes for the grid the automaton inhabits, known as world attributes. Each world attribute defines its own set of available values. Each may have any number of sub-attributes, and each world attribute present in a file's `world` must be defined.
 
-A world attribute is defined by adding it to a new line under the `world` keyword, then following it with a space and its value. For example, setting the world attribute `type` to the built in value `flat` looks like this:
+A world attribute is set by adding it to a new line under the `world` keyword, then following it with a space and its value. For example, setting the world attribute `type` to the built in value `flat` looks like this:
 ```
 world
 	type flat
@@ -80,5 +80,5 @@ neighborhoods
 	moore 1 as default
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODA2NzUwODIsNzc4NjcwODg2XX0=
+eyJoaXN0b3J5IjpbLTE5MzI4Nzg1OTUsNzc4NjcwODg2XX0=
 -->
