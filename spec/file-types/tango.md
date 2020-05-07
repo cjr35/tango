@@ -22,9 +22,9 @@ The `rules` header indicates a list of definitions for rules obeyed by an automa
 
 \* In many cases this will just be the name of a neighborhood defined in the project's .tangoh file.
 
-The `in neighborhood` part of a rule definition is optional. In the absence of a neighborhood clause, Tango will 
+The `in neighborhood` part of a rule definition is optional. In the absence of a neighborhood clause, Tango will assume the user wants to check the default neighborhood as defined in the project's .tangoh file.
 
-The process of checking and applying a rule is simple. Tango checks the condition 
+The process of checking and applying a rule is simple. Tango checks the condition to the left of `>>`. If that condition is true, Tango m
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2MzkxNzQ4MSwzNDI4MDU5MF19
+eyJoaXN0b3J5IjpbLTgyMTQzOTczNywzNDI4MDU5MF19
 -->
