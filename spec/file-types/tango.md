@@ -28,7 +28,7 @@ The list of rules may be ended by an `otherwise` statement. This statement consi
 
 The process of checking and applying rules is simple. Tango checks the condition to the left of `>>`. If that condition is met, Tango applies the current rule and exits, not bothering to check any rules listed below. If the condition is not met, Tango looks at the next rule and repeats the process. If Tango finds no applicable rules, it acts according to the `otherwise` statement at the end of the list.
 ### visual
-The `visual` list in a .tango file describes how a state should be visually represented. This is entirely optional, and is only serves to tell an application how to display the grid. It is a list of visual attributes and their values. Tango's state machine does not use these values to calculate anything. Instead, it stores
+The `visual` list in a .tango file describes how a state should be visually represented. This is entirely optional, and is only serves to tell an application how to display the grid. It is a list of visual attributes and their values. Tango's state machine does not use these values to calculate anything. Instead, it stores them separately from the state machine and provides them to any app that requests them.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjUyOTAxMjg4LDM0MjgwNTkwXX0=
+eyJoaXN0b3J5IjpbOTUxNTYxOTA1LDM0MjgwNTkwXX0=
 -->
