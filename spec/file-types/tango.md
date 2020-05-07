@@ -14,6 +14,8 @@ The declaration of a .tango file can be thought of as the last checkpoint Tango 
 The `rules` header indicates a list of definitions for rules obeyed by an automaton. An automaton obeys different rules depending on the state it is in, so each .tango file has its own `rules`. The syntax of a rule is `expr state in neighborhood >> state`.
 
 `expr` is any valid Tango expression which evaluates to a number or a range.
+`state` is the name of one of the states defined in the project's .tangoh file.
+`in` is a keyword operator
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzY3NDIyOTQsMzQyODA1OTBdfQ==
+eyJoaXN0b3J5IjpbLTE1MTE2MTM5NzgsMzQyODA1OTBdfQ==
 -->
