@@ -36,7 +36,7 @@ attribute name | target
 `char` | text-based Tango visualizations
 `color` | grid-based Tango visualizations
 
-In the absence of a `visual` section in one or more .tango files, Tango provides default values for
+In the absence of a `visual` section in one or more .tango files, Tango provides a default value for each state, ignoring those that do have `visual` sections.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQ4NTE3NjUsMzQyODA1OTBdfQ==
+eyJoaXN0b3J5IjpbNDMzNTI0NTQxLDM0MjgwNTkwXX0=
 -->
