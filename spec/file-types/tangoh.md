@@ -7,7 +7,7 @@ A .tangoh file is as series of lists, each with a different purpose. The lists i
 - `neighborhoods`
 
 Any of these lists may be omitted except for `states`. These are crucial to defining an automaton, and so they must be the first thing in a .tangoh file. The other lists do not have to be in any specific order, but there may be only one of each.
-### General Syntax
+
 Any line in a .tangoh file which is not indented will be considered the header of a list. Encountering any list header not present in this specification (i.e. the list above) will cause Tango to throw an error at transpile-time. There is no requirement for blank lines between lists, but one blank line is recommended to maintain good style and readability.
 ### states
 The `states` keyword is the most important part of a .tangoh file, and it represents the most important part of a cellular automaton. Without having two or more states to switch between, an automaton would just sit there and not do anything.
@@ -79,3 +79,6 @@ A .tangoh file with no `neighborhood` list will be treated as one with the follo
 neighborhoods
 	moore 1 as default
 ```
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNzc4NjcwODg2XX0=
+-->
