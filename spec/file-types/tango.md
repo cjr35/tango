@@ -11,13 +11,16 @@ The `state` and `rules` are required, but `visual` may be omitted. These three k
 ### declaration
 The declaration of a .tango file can be thought of as the last checkpoint Tango encounters before defining a state. After checking the file name against the `states` list in the .tangoh file, Tango checks for the word `state` followed by a space and the file's name again. Finding `state` identifies the file as one which describes a state, and finding the file's name verifies that the following code defines that state.
 ### rules
-The `rules` header indicates a list of definitions for rules obeyed by an automaton. An automaton obeys different rules depending on the state it is in, so each .tango file has its own `rules`. The syntax of a rule is `expr state in neighborhood >> state`.
+The `rules` header indicates a list of definitions for rules obeyed by an automaton. An automaton obeys different rules depending on the state it is in, so each .tango file has its own `rules`. The syntax of a rule is `expr ifState in neighborhood >> newState`.
 
 `expr` is any valid Tango expression which evaluates to a range.
-`state` is the name of one of the states defined in the project's .tangoh file.
+`ifState` is the name of one of the states defined in the project's .tangoh file.
 `in` is a ternary keyword operator which is used to determine whether the current rule should be applied.
 `neighborhood` is any valid Tango expression that evaluates to a neighborhood.*
-`>>` is a binary operator that applies the current rule when appropriate (as determined by `in`)
+`>>` is a binary operator that applies the current rule when appropriate (as determined by `in`).
+`newState` is the name of one of the states defined in the project's .tangoh file.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzM2Njg4NzAsMzQyODA1OTBdfQ==
+eyJoaXN0b3J5IjpbLTg2MTg4MzkwNSwzNDI4MDU5MF19
 -->
