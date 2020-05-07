@@ -49,7 +49,7 @@ A neighborhood is a group of other cells that influence a cell's state. Typical 
 The neighborhood list for a project is headed by the keyword `neighborhoods`, which is followed by an indented list of neighborhood definitions. These definitions take the form `expr as name`.
 
 `expr` is any valid Tango expression which evaluates to a neighborhood.
-`as` is a keyword operator that assigns a name to the neighborhood defined by `expr`.
+`as` is a binary keyword operator that assigns a name to the neighborhood defined by `expr`.
 `name` is the name to be assigned to the neighborhood being defined. This name can be used in .tango files to refer to the neighborhood.
 
 The `as name` part of this definition is optional. In the absence of a name clause, Tango will name neighborhoods according to the following strategy:
@@ -80,5 +80,5 @@ neighborhoods
 	moore 1 as default
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODkzNTA2MTAzLDc3ODY3MDg4Nl19
+eyJoaXN0b3J5IjpbLTE5ODA2NzUwODIsNzc4NjcwODg2XX0=
 -->
