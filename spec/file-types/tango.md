@@ -24,9 +24,9 @@ The `rules` header indicates a list of definitions for rules obeyed by an automa
 
 The `in neighborhood` part of a rule definition is optional. In the absence of a neighborhood clause, Tango will assume the user wants to check the default neighborhood as defined in the project's .tangoh file.
 
-The list of rules may be ended by an `otherwise` statement. This statement consists of the keyword `otherwise` followed by a space and a state name.
+The list of rules may be ended by an `otherwise` statement. This statement consists of the keyword `otherwise` followed by a space and a state name. T
 
-The process of checking and applying rules is simple. Tango checks the condition to the left of `>>`. If that condition is met, Tango applies the current rule and exits, not bothering to check any rules listed below. If the condition is not met 
+The process of checking and applying rules is simple. Tango checks the condition to the left of `>>`. If that condition is met, Tango applies the current rule and exits, not bothering to check any rules listed below. If the condition is not met, Tango looks at the next rule and repeats the process. This 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwNzU5MDk5OSwzNDI4MDU5MF19
+eyJoaXN0b3J5IjpbLTEzMjI2NDczNDYsMzQyODA1OTBdfQ==
 -->
