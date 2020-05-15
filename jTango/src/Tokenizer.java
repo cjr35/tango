@@ -17,6 +17,7 @@ public class Tokenizer {
         KEYWORDS.put("not",             TokenID.NOT);
         KEYWORDS.put("otherwise",       TokenID.OTHERWISE);
         KEYWORDS.put("rules",           TokenID.RULES);
+        KEYWORDS.put("state",          TokenID.STATE);
         KEYWORDS.put("states",          TokenID.STATES);
         KEYWORDS.put("stay",            TokenID.STAY);
         KEYWORDS.put("visual",          TokenID.VISUAL);
@@ -108,8 +109,9 @@ public class Tokenizer {
         addToken(TokenID.EOF);
         if (verbose) {
             for (Token t : tokens) {
-                System.out.print(t.getLexeme() + "(" + t.getID() + ") : ");
+                System.out.printf("%s(%s) : ", t.getLexeme(), t.getID());
             }
+            System.out.print("\n\n");
         }
     }
 

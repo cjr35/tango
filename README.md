@@ -9,10 +9,10 @@ This plan for this repository is to provide Java and JavaScript implementations 
 ## Usage
 After compiling the appropriate java files you can test the lexer by running Tango.java and entering the commands
 ```
-tango conway
+tango Conway
 ```
 or
 ```
-tango -o conway
+tango -o Conway
 ```
 The latter will show verbose output from the lexer. Feel free to locally edit the current sample projects or create your own.

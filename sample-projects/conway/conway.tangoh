@@ -1,3 +1,4 @@
+[A Tango implementation of John Conway's Game of Life. RIP]
 states
 	Dead
 	Alive
