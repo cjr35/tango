@@ -6,7 +6,7 @@ Tango does not and cannot run on its own - an implementation of Tango should rea
 
 This plan for this repository is to provide Java and JavaScript implementations of Tango, as well as a Java user interface for writing and running cellular automata using Tango.
 
-## Usage
+## Current Usage
 After compiling the appropriate java files you can test the lexer by running Tango.java and entering the commands
 ```
 tango Conway
