@@ -1,0 +1,9 @@
+state Dead
+
+rules
+	3 Alive >> Alive
+	otherwise stay
+
+visual
+	char 0
+	color white

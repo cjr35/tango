@@ -1,0 +1,10 @@
+state Alive
+
+rules
+	:1 not Alive >> Dead
+	4: Alive >> Dead
+	otherwise stay
+
+visual
+	char 1
+	color black

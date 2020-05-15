@@ -1,0 +1,11 @@
+states
+	Dead
+	Alive
+
+world
+	type flat
+	cell-init Dead
+
+neighborhoods
+	moore 1 as default
+	moore 2 as test
