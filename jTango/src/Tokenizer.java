@@ -7,21 +7,21 @@ public class Tokenizer {
     private List<Token> tokens;
     private boolean verbose;
 
-    private final static Map<String, TokenID> KEYWORDS;
+    private final static Map<String, TokenClass> KEYWORDS;
 
     static {
         KEYWORDS = new HashMap<>();
-        KEYWORDS.put("as",              TokenID.AS);
-        KEYWORDS.put("in",              TokenID.IN);
-        KEYWORDS.put("neighborhoods",   TokenID.NEIGHBORHOODS);
-        KEYWORDS.put("not",             TokenID.NOT);
-        KEYWORDS.put("otherwise",       TokenID.OTHERWISE);
-        KEYWORDS.put("rules",           TokenID.RULES);
-        KEYWORDS.put("state",          TokenID.STATE);
-        KEYWORDS.put("states",          TokenID.STATES);
-        KEYWORDS.put("stay",            TokenID.STAY);
-        KEYWORDS.put("visual",          TokenID.VISUAL);
-        KEYWORDS.put("world",           TokenID.WORLD);
+        KEYWORDS.put("as",              TokenClass.AS);
+        KEYWORDS.put("in",              TokenClass.IN);
+        KEYWORDS.put("neighborhoods",   TokenClass.NEIGHBORHOODS);
+        KEYWORDS.put("not",             TokenClass.NOT);
+        KEYWORDS.put("otherwise",       TokenClass.OTHERWISE);
+        KEYWORDS.put("rules",           TokenClass.RULES);
+        KEYWORDS.put("state",           TokenClass.STATE);
+        KEYWORDS.put("states",          TokenClass.STATES);
+        KEYWORDS.put("stay",            TokenClass.STAY);
+        KEYWORDS.put("visual",          TokenClass.VISUAL);
+        KEYWORDS.put("world",           TokenClass.WORLD);
     }
 
     public Tokenizer(File file, boolean verbose) throws IOException {
@@ -60,20 +60,20 @@ public class Tokenizer {
                 case '>':
                     if (peek() == '>') {
                         consume();
-                        addToken(TokenID.APPLICATION);
+                        addToken(TokenClass.APPLICATION);
                     }
                     break;
                 case ' ':
                     consumeFollowing(' ');
 
-                    addToken(TokenID.SPACE);
+                    addToken(TokenClass.SPACE);
                     break;
                 case '\n':
-                    addToken(TokenID.NEWLINE);
+                    addToken(TokenClass.NEWLINE);
                     while (peek() == '\t') {
                         tokenStart = currentIndex;
                         consume();
-                        addToken(TokenID.INDENT);
+                        addToken(TokenClass.INDENT);
                     }
                     line++;
                     break;
@@ -83,18 +83,18 @@ public class Tokenizer {
                 default:
                     consumeTo(' ', '\r');
                     String lexeme = source.substring(tokenStart, currentIndex);
-                    TokenID id;
+                    TokenClass id;
                     Object javaValue;
                     if (lexeme.matches("^\\d+$")) {
-                        id = TokenID.NUMBER;
+                        id = TokenClass.NUMBER;
                         javaValue = Integer.parseInt(lexeme);
                     }
                     else if (lexeme.matches("^\\d*:\\d*$")) {
-                        id = TokenID.RANGE;
+                        id = TokenClass.RANGE;
                         javaValue = new Range(lexeme);
                     }
                     else if (lexeme.matches("^[-_0-9A-z]+$")) {
-                        id = KEYWORDS.getOrDefault(lexeme, TokenID.IDENTIFIER);
+                        id = KEYWORDS.getOrDefault(lexeme, TokenClass.IDENTIFIER);
                         javaValue = lexeme;
                     }
                     else {
@@ -106,7 +106,7 @@ public class Tokenizer {
             }
         }
         tokenStart = currentIndex;
-        addToken(TokenID.EOF);
+        addToken(TokenClass.EOF);
         if (verbose) {
             for (Token t : tokens) {
                 System.out.printf("%s(%s) : ", t.getLexeme(), t.getID());
@@ -157,11 +157,11 @@ public class Tokenizer {
         return str;
     }
 
-    private void addToken(TokenID id) {
+    private void addToken(TokenClass id) {
         addToken(id, null);
     }
 
-    private void addToken(TokenID id, Object javaValue) {
+    private void addToken(TokenClass id, Object javaValue) {
         tokens.add(new Token(id, source.substring(tokenStart, currentIndex), javaValue, fileName, line));
     }
 }

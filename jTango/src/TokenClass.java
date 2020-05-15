@@ -1,4 +1,4 @@
-public enum TokenID {
+public enum TokenClass {
     // Keywords
     AS, IN, NEIGHBORHOODS, NOT, OTHERWISE, RULES, STATE, STATES, STAY, VISUAL, WORLD,
 
